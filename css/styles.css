@@ -24,7 +24,7 @@ ul {
   padding-left: 0;
 }
 
-h1 h2 h3 h4 {
+h1, h2, h3, h4, {
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -36,7 +36,6 @@ h1 h2 h3 h4 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-
 }
 
 .container {
@@ -51,15 +50,13 @@ h1 h2 h3 h4 {
   /* outline: 2px solid aqua; */
 }
 
-.section{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
-
 }
 
 /*-- ШАПКА САЙТА --*/
 .logo {
-
   color: var(--logo-title-color--);
 
   font-family: Raleway, cursive;
@@ -71,14 +68,11 @@ h1 h2 h3 h4 {
 
 .logo .accent {
   color: var(--accent-color--);
-
 }
 
 .page-header {
-  border-bottom: 1px solid #ECECEC;
-  ;
+  border-bottom: 1px solid #ececec;
 }
-
 
 /* НАВИГАЦИЯ */
 .site-nav .link {
@@ -93,7 +87,6 @@ h1 h2 h3 h4 {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
 }
 
 .site-nav .link:hover,
@@ -104,14 +97,12 @@ h1 h2 h3 h4 {
 
 .site-nav .link.current {
   color: var(--accent-color--);
-
 }
 
 .site-nav.list {
   padding-left: 0;
   margin-left: 93px;
-  margin-right: auto;
-
+  /* margin-right: auto; */
 }
 
 .site-nav {
@@ -120,22 +111,20 @@ h1 h2 h3 h4 {
 
 .container.main-nav {
   display: flex;
-  align-items: center
+  align-items: center;
 }
-
 
 .site-nav .item {
   margin-left: 0;
 }
 
-.site-nav .item:not( :last-child) {
+.site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 
 /* КОНТАКТЫ */
 
 .contacts-list .header {
-
   color: var(--primary-text-color--);
 
   font-weight: 500;
@@ -154,10 +143,9 @@ h1 h2 h3 h4 {
   display: flex;
   padding-left: 0;
   margin-left: auto;
-
 }
 
-.contacts-list .item+.item {
+.contacts-list .item + .item {
   margin-left: 50px;
 }
 
@@ -172,7 +160,7 @@ h1 h2 h3 h4 {
 .hero .title {
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
+  /* padding-top: 200px; */
 
   color: var(--button-color--);
 
@@ -183,8 +171,6 @@ h1 h2 h3 h4 {
   text-align: center;
   text-transform: uppercase;
   max-width: 700px;
-
-
 }
 
 .button {
@@ -194,7 +180,6 @@ h1 h2 h3 h4 {
   font-family: inherit;
   cursor: pointer;
   border-radius: 4px;
-
 }
 
 .button.link:hover,
@@ -207,28 +192,35 @@ h1 h2 h3 h4 {
 .button.hero {
   display: inline-block;
   padding: 10px 32px;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
   margin-right: auto;
   margin-left: auto;
 
   color: var(--button-color--);
   background-color: var(--accent-color--);
 
-
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.06em;
   line-height: 1.9;
-
 }
 
 .hero.section {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.container.hero {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.container.hero {
+/* .container.hero {
   padding-top: 200px;
-}
+  padding-bottom: 200px;
+} */
 
 /*  FEATURES */
 .features-list .title {
@@ -251,7 +243,7 @@ h1 h2 h3 h4 {
   line-height: 1.71;
 }
 
-.features>.title.heading {
+.features > .title.heading {
   display: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -262,19 +254,16 @@ h1 h2 h3 h4 {
   flex-wrap: wrap;
   padding-right: 0;
   padding-left: 0;
-
 }
 
 .features-list .item {
   width: 270px;
   margin-right: 30px;
-
 }
 
 .features-list .item:nth-child(4n) {
   margin-right: 0;
 }
-
 
 .container.features {
   display: flex;
@@ -284,23 +273,25 @@ h1 h2 h3 h4 {
   justify-content: space-between;
 }
 
+.features.section {
+  padding-bottom: 0;
+}
+
 /* EXAMPLES*/
 .example .title {
   color: var(--title-text-color--);
   margin-bottom: 50px;
-
 }
 
 .example-list {
   display: flex;
-
 }
 /* 
 .example.section>.container {
   padding-bottom: 94px;
 } */
 
-.title.heading>.list {
+.title.heading > .list {
   padding-left: 0;
 }
 
@@ -313,15 +304,13 @@ h1 h2 h3 h4 {
   margin-right: 30px;
 }
 
-
 /* TEAM */
 .team-list .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  margin-top: 30px;
   margin-bottom: 10px;
-
+  margin-top: 0;
 }
 
 .team {
@@ -338,34 +327,36 @@ h1 h2 h3 h4 {
   line-height: 1.18;
   color: var(--primary-text-color--);
   font-weight: 400;
-  margin-bottom: 30px;
   margin-top: 0;
-
+  margin-bottom: 0;
 }
 
 .team-member.item:not(:last-child) {
   margin-right: 30px;
 }
 
-
 .team-list {
   display: flex;
-  /* padding-bottom: 94px; */
+  padding-bottom: 94px;
 }
 
-.container.title>.title.heading {
-  /* padding-top: 94px; */
-  padding-bottom: 50px;
+.container.title > .title.heading {
+  margin-bottom: 50px;
 }
 
 .team-member {
-  width: calc((100%-3*30px)/4);
+  width: calc((100%-3 * 30px) / 4);
   background-color: #fff;
   text-align: center;
 }
 
+.team-describtion {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 /* футер */
+
 footer {
   background-color: var(--hero-bcr-color--);
 }
@@ -394,13 +385,12 @@ footer {
   color: var(--accent-color--);
 }
 
-
 .item.address .address {
   font-size: 14px;
   line-height: 2;
   text-decoration: none;
 
-  color: var(--button-color--)
+  color: var(--button-color--);
 }
 
 .item.address .link.footer {
@@ -413,8 +403,7 @@ footer {
 .logo.footer {
   display: block;
   margin-bottom: 20px;
-  padding-top: 60px;
-
+  /* padding-top: 60px; */
 }
 
 .contacts-list.footer {
@@ -429,6 +418,11 @@ footer {
 
 .item.address:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.container.footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 /* СТИЛИ ПОРТФОЛИО */
@@ -456,26 +450,22 @@ footer {
 .filter-list {
   display: flex;
   justify-content: center;
-
+  margin-bottom: 50px;
 }
 
 .filter-list.item {
   display: block;
   padding-bottom: 0;
   padding-top: 0;
+ margin-bottom: 0;
 }
 
-.filter-list {
-  padding-bottom: 50px;
-  /* padding-top: 94px; */
-}
 
 .filter-list.item:not(:last-child) {
   margin-right: 8px;
 }
 
 /* PORTFOLIO */
-
 
 .portfolio-list {
   display: flex;
@@ -486,7 +476,6 @@ footer {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-
 }
 
 .portfolio-item:nth-child(3n) {
@@ -505,7 +494,7 @@ footer {
   background-color: var(--button-color--);
   justify-content: flex-start;
   font-style: inherit;
-  border-bottom: 1px solid #EEEEEE;
+  
 }
 
 .portfolio-item .title {
@@ -516,8 +505,8 @@ footer {
 
   color: var(--title-text-color--);
 
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin-top: 0;
+  margin-bottom: 4px; 
   text-decoration: none;
 }
 
@@ -534,6 +523,17 @@ footer {
 }
 
 .portfolio-item .describtion {
-  margin-bottom: 20px;
+  margin-bottom: 0;
   margin-top: 0;
+}
+
+.portfolio-about{
+padding-top: 20px;
+padding-bottom: 20px;
+border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+.portfolio-item .pic{
+  display: block;
 }
